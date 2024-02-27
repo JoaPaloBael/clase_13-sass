@@ -1,0 +1,24 @@
+.main{
+    background-color: $blanco;
+    h1{
+        text-align: center;
+        font-family: $fuente-titulo;
+        padding: 10px;
+    }
+    .seccion-uno{
+        border: solid $azul 3px;
+        max-width: (600px/2);
+        @extend .flex-center;
+        @include fondo-destacado(pink, center);
+
+    }
+    .seccion-dos{
+        width: 70%;
+        @include fondo-destacado (#5c5cfb, justify);
+    }
+}
+
+
+button{
+    @extend .boton;
+}

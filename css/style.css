@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.flex-center, .main .seccion-uno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.boton, button {
+  background-color: #011627;
+  color: #fdfffc;
+  width: 50%;
+  padding: 10px;
+  margin: 5%; }
+
+.header {
+  background-color: #C01A7D; }
+  .header ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .header ul a {
+      background-color: #ffe4c428;
+      color: white;
+      display: flex;
+      width: 150px;
+      margin: 20px;
+      padding: 5px;
+      justify-content: center;
+      font-family: "Anta", sans-serif; }
+      .header ul a:hover {
+        background-color: #ffe4c48a; }
+
+.main {
+  background-color: #fdfffc; }
+  .main h1 {
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    padding: 10px; }
+  .main .seccion-uno {
+    border: solid #011627 3px;
+    max-width: 300px;
+    background-color: pink;
+    color: #011627;
+    text-align: center;
+    padding: 20px; }
+  .main .seccion-dos {
+    width: 70%;
+    background-color: #5c5cfb;
+    color: #011627;
+    text-align: justify;
+    padding: 20px; }
+
+footer {
+  background-color: #C01A7D; }
