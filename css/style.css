@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+.fa-bell {
+  color: #29a5c7;
+  font-size: 20;
+  padding: 0 5px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +24,32 @@
   padding: 10px;
   margin: 5%; }
 
+@keyframes latido {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes arcoiris {
+  0% {
+    background-color: #f93131;
+    color: white;
+    text-decoration: underline; }
+  20% {
+    background-color: #f99531; }
+  40% {
+    background-color: #3ef931;
+    color: black; }
+  60% {
+    background-color: #3163f9;
+    color: white; }
+  80% {
+    background-color: #ba31f9; }
+  100% {
+    background-color: #f93131; } }
+
 .header {
   background-color: #C01A7D; }
   .header ul {
@@ -38,6 +69,12 @@
       .header ul a:hover {
         background-color: #ffe4c48a; }
 
+.animado {
+  animation: latido 3s 1; }
+
+.test-animado {
+  animation: arcoiris 5s infinite; }
+
 .main {
   background-image: linear-gradient(to bottom, #ffbf3f, #ffbf3faa);
   min-height: 80vh; }
@@ -50,7 +87,6 @@
     flex-wrap: wrap;
     justify-content: space-around; }
     .main .articulos .seccion-uno {
-      transform: scale(0.7) skewX(5deg);
       background-color: pink;
       color: #011627;
       text-align: center;
@@ -59,7 +95,9 @@
       width: 300px;
       margin: 10px; }
       .main .articulos .seccion-uno button {
-        transform: translate(0, 30px) rotateZ(10deg); }
+        transition: .5s ease-in-out; }
+        .main .articulos .seccion-uno button:hover {
+          transform: translate(0, 30px) rotateZ(10deg); }
     .main .articulos .seccion-dos {
       background-color: #5c5cfb;
       color: #011627;
@@ -68,6 +106,10 @@
       border: solid #011627 3px;
       width: 300px;
       margin: 10px; }
+      .main .articulos .seccion-dos h3 {
+        animation-name: latido;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; }
     .main .articulos .seccion-tres {
       background-color: #fab128;
       color: #011627;
@@ -76,6 +118,17 @@
       border: solid #011627 3px;
       width: 300px;
       margin: 10px; }
+      .main .articulos .seccion-tres form {
+        display: flex;
+        flex-direction: column; }
+        .main .articulos .seccion-tres form input {
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          text-align: center;
+          transition: scale .3s ease-in-out; }
+          .main .articulos .seccion-tres form input:focus {
+            transform: scale(1.05); }
 
 footer {
   background-color: #C01A7D; }

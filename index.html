@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Link de bootstrap -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
     <title>SASS 2 - Continua la tortura</title>
 </head>
 <body>
@@ -11,17 +15,17 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" class="test-animado">Ayuda</a></li>
+                <li><a href="#" class="animado">Quienes somos</a></li>
+                <li><a href="#">Contacto <i class="fa-solid fa-bell"></i></a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <h1>SASS 2 - Continua la tortura</h1>
+        <h1 class="animate__animated animate__jackInTheBox">SASS 2 - Continua la tortura</h1>
         <div class="articulos">
             <section class="seccion-uno">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="animate__animated animate__lightSpeedInLeft">Lorem ipsum dolor sit amet consectetur.</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum voluptatem vero temporibus, dolore ipsa? Nesciunt numquam sit illum officia delectus dolorum distinctio qui exercitationem alias repellat. Aspernatur iste suscipit, quasi nesciunt consequatur temporibus facere sunt? Dolorem quos veritatis repudiandae provident, consequuntur dolorum, totam modi voluptas eius unde, ut optio.</p>
                 <button>VER MÁS</button>
             </section>
@@ -31,9 +35,12 @@
                 <button>VER MÁS</button>
             </section>
             <section class="seccion-tres">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum voluptatem vero temporibus, dolore ipsa? Nesciunt numquam sit illum officia delectus dolorum distinctio qui exercitationem alias repellat. Aspernatur iste suscipit, quasi nesciunt consequatur temporibus facere sunt? Dolorem quos veritatis repudiandae provident, consequuntur dolorum, totam modi voluptas eius unde, ut optio.</p>
-                <button>VER MÁS</button>
+                <form action="#" method="get">
+                    <input type="text" placeholder="Nombre" name="Nombre">
+                    <input type="text" placeholder="Apellido" name="Apellido">
+                    <input type="email" placeholder="Email" name="Email">
+                    <input type="submit" value="Enviar">
+                </form>
             </section>
         </div>
     </main>
