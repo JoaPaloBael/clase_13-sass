@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
-.flex-center, .main .seccion-uno {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,24 +39,43 @@
         background-color: #ffe4c48a; }
 
 .main {
-  background-color: #fdfffc; }
+  background-image: linear-gradient(to bottom, #ffbf3f, #ffbf3faa);
+  min-height: 80vh; }
   .main h1 {
     text-align: center;
     font-family: "Anta", sans-serif;
     padding: 10px; }
-  .main .seccion-uno {
-    border: solid #011627 3px;
-    max-width: 300px;
-    background-color: pink;
-    color: #011627;
-    text-align: center;
-    padding: 20px; }
-  .main .seccion-dos {
-    width: 70%;
-    background-color: #5c5cfb;
-    color: #011627;
-    text-align: justify;
-    padding: 20px; }
+  .main .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .main .articulos .seccion-uno {
+      transform: scale(0.7) skewX(5deg);
+      background-color: pink;
+      color: #011627;
+      text-align: center;
+      padding: 20px;
+      border: solid #011627 3px;
+      width: 300px;
+      margin: 10px; }
+      .main .articulos .seccion-uno button {
+        transform: translate(0, 30px) rotateZ(10deg); }
+    .main .articulos .seccion-dos {
+      background-color: #5c5cfb;
+      color: #011627;
+      text-align: center;
+      padding: 20px;
+      border: solid #011627 3px;
+      width: 300px;
+      margin: 10px; }
+    .main .articulos .seccion-tres {
+      background-color: #fab128;
+      color: #011627;
+      text-align: center;
+      padding: 20px;
+      border: solid #011627 3px;
+      width: 300px;
+      margin: 10px; }
 
 footer {
   background-color: #C01A7D; }
